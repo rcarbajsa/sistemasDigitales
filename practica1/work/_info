@@ -1,0 +1,132 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Máximo/Desktop/UPM/SistemasDigitales
+Ecodifica_boton
+Z0 w1487929128
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/SistemasDigitales
+Z4 8C:\SistemasDigitales\codifica_boton_grupo_22.vhd
+Z5 FC:\SistemasDigitales\codifica_boton_grupo_22.vhd
+l0
+L25
+VfE0BJ0aQKT4KX6cWS51K22
+!s100 AY6kS90h7D?]61n7LC`Hl2
+Z6 OV;C;10.4d;61
+32
+Z7 !s110 1488138564
+!i10b 1
+Z8 !s108 1488138564.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\SistemasDigitales\codifica_boton_grupo_22.vhd|
+Z10 !s107 C:\SistemasDigitales\codifica_boton_grupo_22.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Aarquitectura_cod_boton
+R1
+R2
+Z13 DEx4 work 14 codifica_boton 0 22 fE0BJ0aQKT4KX6cWS51K22
+l32
+L31
+V_U3NzTkMFB`aKGiY9OU_d2
+!s100 MTk1KLU1UoV?[_N?3a:[`2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecodifica_boton_tb
+w1488048095
+R1
+R2
+R3
+Z14 8C:/SistemasDigitales/codifica_boton_tb.vhd
+Z15 FC:/SistemasDigitales/codifica_boton_tb.vhd
+l0
+L4
+VABk8jiDUSN^TBRZfI5hJL3
+!s100 h5Ni]b69@NSaOmcERKc>@3
+R6
+32
+!s110 1488048106
+!i10b 1
+!s108 1488048106.000000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/SistemasDigitales/codifica_boton_tb.vhd|
+Z17 !s107 C:/SistemasDigitales/codifica_boton_tb.vhd|
+!i113 1
+R11
+R12
+Aarquitectura_cod_boton_tb
+R13
+R1
+R2
+DEx4 work 17 codifica_boton_tb 0 22 ABk8jiDUSN^TBRZfI5hJL3
+l18
+L8
+VZOjHMYGX]c8c0B6GHZRmY1
+!s100 [Em0mJ9e:A`3;EVV:LZ2X0
+R6
+32
+!s110 1487936975
+!i10b 1
+!s108 1487936975.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/SistemasDigitales/codifica_boton.vhd|
+!s107 C:/SistemasDigitales/codifica_boton.vhd|
+!i113 1
+R11
+R12
+FC:/SistemasDigitales/codifica_boton.vhd
+8C:/SistemasDigitales/codifica_boton.vhd
+w1488047933
+Ecodifica_test
+Z18 w1488049172
+R1
+R2
+R3
+Z19 8C:\SistemasDigitales\codifica_boton_tb.vhd
+Z20 FC:\SistemasDigitales\codifica_boton_tb.vhd
+l0
+L4
+Ve1>JHi2GXhNG]^o0^zRH?0
+!s100 HFfJlK22e?RH>iRLA[fEk2
+R6
+32
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\SistemasDigitales\codifica_boton_tb.vhd|
+Z22 !s107 C:\SistemasDigitales\codifica_boton_tb.vhd|
+!i113 1
+R11
+R12
+Aarquitectura_cod_boton_tb
+R13
+R1
+R2
+Z23 DEx4 work 13 codifica_test 0 22 e1>JHi2GXhNG]^o0^zRH?0
+l18
+L8
+Z24 V9BAPGfb>PU7bAYEPOQbhd1
+Z25 !s100 W<b3dVASD[ERBjK8MPij22
+R6
+32
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12

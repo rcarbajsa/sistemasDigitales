@@ -12,13 +12,14 @@ ARCHITECTURE  arquitectura_cod_boton_tb OF codifica_Test IS
 
      FOR X:codifica_boton USE ENTITY work.codifica_boton(arquitectura_cod_boton);
 
- --Declaramos las dos señales
+ 
      SIGNAL piso_donde_va: std_logic_vector(2 DOWNTO 0);
      SIGNAL codigo_piso: std_logic_vector(1 DOWNTO 0);
 BEGIN
 
      X: codifica_boton PORT MAP(piso_donde_va => piso_donde_va, codigo_piso => codigo_piso);
-	piso_donde_va <= "000",--Establecemos como varía piso_donde_va a lo largo de la simulación
+	--** Error: C:/SistemasDigitales/codifica_boton_tb.vhd(22): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+	piso_donde_va <= "000",
          "001" AFTER 20 ns,
          "010" AFTER 40 ns,
          "100" AFTER 80 ns,

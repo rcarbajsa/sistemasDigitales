@@ -1,0 +1,89 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/SistemasDigitales
+Ebiestable_d_con_clr
+Z0 w1492512764
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/SistemasDigitales/practica_2
+Z4 8C:\SistemasDigitales\practica_2\ biD_grupo22.vhd
+Z5 FC:\SistemasDigitales\practica_2\ biD_grupo22.vhd
+l0
+L5
+VNBA@CLRY4a`V8Vi>[:C<d0
+!s100 H@7_Sjmbc:JhI]@k[amSQ2
+Z6 OV;C;10.4d;61
+32
+Z7 !s110 1492530595
+!i10b 1
+Z8 !s108 1492530595.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\SistemasDigitales\practica_2\ biD_grupo22.vhd|
+Z10 !s107 C:\SistemasDigitales\practica_2\ biD_grupo22.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Aflujo_asin
+R1
+R2
+Z13 DEx4 work 19 biestable_d_con_clr 0 22 NBA@CLRY4a`V8Vi>[:C<d0
+l11
+L10
+VK[CnP`iM4d:X3Ccf^<5=I2
+!s100 WW1@`@zh;A2]TSOMJN`2n2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebiestable_d_test
+Z14 w1492512816
+R1
+R2
+R3
+Z15 8C:/SistemasDigitales/practica_2/ biD_grupo22_tb.vhd
+Z16 FC:/SistemasDigitales/practica_2/ biD_grupo22_tb.vhd
+l0
+L5
+VBP8Q@Y4LgQ;Q5LgC=T]TF0
+!s100 LLo>lGToL?JeB=chinSOJ0
+R6
+32
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/SistemasDigitales/practica_2/ biD_grupo22_tb.vhd|
+Z18 !s107 C:/SistemasDigitales/practica_2/ biD_grupo22_tb.vhd|
+!i113 1
+R11
+R12
+Atest_general
+R13
+R1
+R2
+Z19 DEx4 work 16 biestable_d_test 0 22 BP8Q@Y4LgQ;Q5LgC=T]TF0
+l20
+L8
+Z20 Vf98P882zi=GlLZJPO0B570
+Z21 !s100 zKQOVEcFIoH8`:YcYQ02G2
+R6
+32
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
