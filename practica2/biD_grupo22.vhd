@@ -5,8 +5,7 @@
 -- Proyecto: Segunda práctica de Sistemas Digitales
 -- Diseño: Biestables y Registros
 -- Nombre del fichero: biD_grupo22.vhd
--- Autor1: Raúl Carbajosa González
--- Autor2: Máximo García Martínez
+-- Autor: Raúl Carbajosa González (y160311) y Máximo García Martínez (y160242)
 -- Fecha: 18/04/2017
 -- Versión: 1
 -- Resumen: Contiene una entidad y una arquitectura de un
