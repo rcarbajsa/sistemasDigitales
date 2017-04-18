@@ -1,3 +1,27 @@
+---------------------------------------------------------------------------
+-- Este diseño es propietario el autor y puede ser utilizado con fines de
+-- estudio
+---------------------------------------------------------------------------
+-- Proyecto: Segunda práctica de Sistemas Digitales
+-- Diseño: Biestables y Registros
+-- Nombre del fichero: biD_grupo22.vhd
+-- Autor1: Raúl Carbajosa González
+-- Autor2: Máximo García Martínez
+-- Fecha: 18/04/2017
+-- Versión: 1
+-- Resumen: Contiene una entidad y una arquitectura de un
+-- biestable tipo D activado por flanco de bajada del reloj y señal de clear
+-- asíncrona activa a nivel alto.
+-- Se utilizan el tipo de datos STD_LOGIC para todas las señales.
+-- La arquitectura se realiza en estilo de flujo de datos.
+--
+-- Modificaciones:
+--
+-- Fecha Autor Versión Descripción del cambio
+-- ========================================================================
+--
+-- ========================================================================
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
