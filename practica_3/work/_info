@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/15.0
+Efsm_ascensor
+Z0 w1494419440
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/y160242/Desktop/practica_3
+Z4 8C:/Users/y160242/Desktop/practica_3/FSM_ascensor_grupo22.vhd
+Z5 FC:/Users/y160242/Desktop/practica_3/FSM_ascensor_grupo22.vhd
+l0
+L4
+V795GgHNzk6VeRkcHX3CXz2
+!s100 0_[Y@@Lehl^]a`U0XIL;51
+Z6 OV;C;10.3d;59
+32
+Z7 !s110 1494419492
+!i10b 1
+Z8 !s108 1494419492.566000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/y160242/Desktop/practica_3/FSM_ascensor_grupo22.vhd|
+Z10 !s107 C:/Users/y160242/Desktop/practica_3/FSM_ascensor_grupo22.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Afsm_arquitectura
+R1
+R2
+DEx4 work 12 fsm_ascensor 0 22 795GgHNzk6VeRkcHX3CXz2
+l15
+L12
+V_bmol]`H0@ebMzfXY28FQ1
+!s100 @Fde@<k6O>dzY6ee[>XLX0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efsm_ascensor_test
+Z13 w1494417006
+R1
+R2
+R3
+Z14 8C:/Users/y160242/Desktop/practica_3/FSM_ascensor_tb.vhd
+Z15 FC:/Users/y160242/Desktop/practica_3/FSM_ascensor_tb.vhd
+l0
+L29
+VnX`_F7UL8QeYCmID@n`[11
+!s100 4SOkZYa`TGTPb^PPRnXnV1
+R6
+32
+Z16 !s110 1494419493
+!i10b 1
+Z17 !s108 1494419493.697000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/y160242/Desktop/practica_3/FSM_ascensor_tb.vhd|
+Z19 !s107 C:/Users/y160242/Desktop/practica_3/FSM_ascensor_tb.vhd|
+!i113 1
+R11
+R12
+Afsm_arquitectura_test
+R1
+R2
+Z20 DEx4 work 17 fsm_ascensor_test 0 22 nX`_F7UL8QeYCmID@n`[11
+l65
+L32
+Z21 VLY:c_36MDL9FBFJf]C8fo2
+Z22 !s100 ;]3h29lY^Tf>WJa_g8l9C1
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
