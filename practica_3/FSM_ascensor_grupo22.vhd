@@ -4,8 +4,8 @@ ENTITY FSM_ascensor IS
 	PORT (clk, reset: IN STD_LOGIC;
 	codigo_piso: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
  	sube, baja: OUT STD_LOGIC;
- 	piso_donde_esta: OUT STD_LOGIC_VECTOR (1 DOWNTO 0));
-END FSM_ascensor;
+ 	piso_donde_esta: OUT STD_LOGIC_VECTOR (1 DOWNTO 0)); 
+END FSM_ascensor;		
 
 ARCHITECTURE FSM_arquitectura OF FSM_ascensor IS
 	TYPE pisos IS (piso0, piso1, piso2);
@@ -71,6 +71,4 @@ BEGIN
 			e_actual <= e_futuro;
 		END IF;
 	END PROCESS;
-						
-	
 END FSM_arquitectura;
