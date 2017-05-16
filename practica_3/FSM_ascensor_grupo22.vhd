@@ -1,11 +1,10 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 ENTITY FSM_ascensor IS 
-	PORT (clk, reset: IN STD_LOGIC; -- activo por flanco de subida
-	codigo_piso: IN STD_LOGIC_VECTOR (1 DOWNTO 0); --código binario del Nº de piso pulsado
- 	sube, baja: OUT STD_LOGIC; -- dirección movimiento del motor
- 	piso_donde_esta: OUT STD_LOGIC_VECTOR (1 DOWNTO 0)); -- código binario del piso donde se
- 	--encuentra que coincide con el código asignado a la luz del panel 
+	PORT (clk, reset: IN STD_LOGIC;
+	codigo_piso: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
+ 	sube, baja: OUT STD_LOGIC;
+ 	piso_donde_esta: OUT STD_LOGIC_VECTOR (1 DOWNTO 0));
 END FSM_ascensor;
 
 ARCHITECTURE FSM_arquitectura OF FSM_ascensor IS
