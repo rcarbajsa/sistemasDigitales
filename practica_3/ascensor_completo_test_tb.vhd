@@ -22,14 +22,14 @@ END COMPONENT;
 
 
 FOR U0:codifica_boton USE ENTITY work.codifica_boton(arquitectura_cod_boton);
-FOR U1:FSM_ascensor USE ENTITY work.FSM_ascensor(FSM_aquitectura);
+FOR U1:FSM_ascensor USE ENTITY work.FSM_ascensor(FSM_arquitectura);
 
 
      CONSTANT periodo : TIME := 20 ns;
      SIGNAL sube:std_logic;
      SIGNAL baja:std_logic;
-     SIGNAL clk: std_logic;
-     SIGNAL reset:std_logic;
+     SIGNAL clk: std_logic:='1';
+     SIGNAL reset:std_logic:='1';
      SIGNAL piso_donde_esta:std_logic_vector(1 DOWNTO 0);
      SIGNAL B: std_logic_vector(2 DOWNTO 0);
      SIGNAL c: std_logic_vector(1 DOWNTO 0);
