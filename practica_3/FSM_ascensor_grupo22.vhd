@@ -1,31 +1,74 @@
 LIBRARY ieee;
-USE ieee.std_logic_1164.ALL; 
-ENTITY ascensor_completo Is
-PORT(B:IN std_logic_vector(2 DOWNTO 0);clk,reset:IN std_logic; 
-sube,baja:OUT std_logic;piso_donde_esta:OUT std_logic_vector(1 DOWNTO 0));
-END ascensor_completo;
-
-ARCHITECTURE arquitectura_ascensor_completo OF ascensor_completo IS
-
-
-COMPONENT codifica_boton IS
-     PORT(piso_donde_va: IN STD_LOGIC_VECTOR (2 DOWNTO 0); codigo_piso: OUT STD_LOGIC_VECTOR (1 DOWNTO 0));
-END COMPONENT;
-
-COMPONENT FSM_ascensor IS 
+USE ieee.std_logic_1164.ALL;
+ENTITY FSM_ascensor IS 
 	PORT (clk, reset: IN STD_LOGIC;
 	codigo_piso: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
  	sube, baja: OUT STD_LOGIC;
- 	piso_donde_esta: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)); 
-END COMPONENT;	
+ 	piso_donde_esta: OUT STD_LOGIC_VECTOR (1 DOWNTO 0)); 
+END FSM_ascensor;		
 
-
-FOR U0:codifica_boton USE ENTITY work.codifica_boton(arquitectura_cod_boton);
-FOR U1:fsm_ascensor USE ENTITY work.fsm_ascensor(fsm_aquitectura);
-SIGNAL c:std_logic_vector(1 DOWNTO 0);
-
-
+ARCHITECTURE FSM_arquitectura OF FSM_ascensor IS
+	TYPE pisos IS (piso0, piso1, piso2);
+	SIGNAL e_actual, e_futuro: pisos := piso0;
 BEGIN
-U0:codifica_boton PORT MAP(piso_donde_va=>B,codigo_piso=>c);
-U1:FSM_ascensor PORT MAP(clk=>clk,reset=>reset,codigo_piso=>c,sube=>sube,baja=>baja,piso_donde_esta=>piso_donde_esta);
-END arquitectura_ascensor_completo;
+	PROCESS (e_actual, codigo_piso)
+	BEGIN
+		CASE e_actual IS
+			WHEN piso0 =>		
+				IF codigo_piso = "00" THEN
+					e_futuro <= piso0;
+					sube <= '0';
+					baja <= '0';
+				ELSIF codigo_piso = "01" THEN
+					e_futuro <= piso1;
+					sube <= '1';
+					baja <= '0';
+				ELSE
+					e_futuro <= piso2;
+					sube <= '1';
+					baja <= '0';
+				END IF;
+				piso_donde_esta <= "00";
+			WHEN piso1 =>
+				IF codigo_piso = "00" THEN
+					e_futuro <= piso0;
+					sube <= '0';
+					baja <= '1';
+				ELSIF codigo_piso = "01" THEN
+					e_futuro <= piso1;
+					sube <= '0';
+					baja <= '0';
+				ELSE
+					e_futuro <= piso2;
+					sube <= '1';
+					baja <= '0';
+				END IF;
+				piso_donde_esta <= "01";
+			WHEN piso2 =>
+				IF codigo_piso = "00" THEN
+					e_futuro <= piso0;
+					sube <= '0';
+					baja <= '1';
+				ELSIF codigo_piso = "01" THEN
+					e_futuro <= piso1;
+					sube <= '0';
+					baja <= '1';
+				ELSE
+					e_futuro <= piso2;
+					sube <= '0';
+					baja <= '0';
+				END IF;
+				piso_donde_esta <= "10";
+		END CASE;
+	END PROCESS;
+	
+	PROCESS
+	BEGIN
+		WAIT UNTIL (rising_edge(clk) OR reset = '0');
+		IF(reset ='0') THEN
+			e_actual <= piso0;
+		ELSE
+			e_actual <= e_futuro;
+		END IF;
+	END PROCESS;
+END FSM_arquitectura;
