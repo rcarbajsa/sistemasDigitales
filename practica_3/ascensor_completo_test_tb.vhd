@@ -28,20 +28,20 @@ FOR U1:FSM_ascensor USE ENTITY work.FSM_ascensor(FSM_arquitectura);
      CONSTANT periodo : TIME := 20 ns;
      SIGNAL sube:std_logic;
      SIGNAL baja:std_logic;
-     SIGNAL clk: std_logic:='1';
+     SIGNAL reloj: std_logic:='1';
      SIGNAL reset:std_logic:='1';
      SIGNAL piso_donde_esta:std_logic_vector(1 DOWNTO 0);
-     SIGNAL B: std_logic_vector(2 DOWNTO 0);
-     SIGNAL c: std_logic_vector(1 DOWNTO 0);
+     SIGNAL piso_donde_va: std_logic_vector(2 DOWNTO 0);
+     SIGNAL codigo_piso: std_logic_vector(1 DOWNTO 0);
 BEGIN
- U0:codifica_boton PORT MAP(piso_donde_va=>B,codigo_piso=>c);
-U1:FSM_ascensor PORT MAP(clk=>clk,reset=>reset,codigo_piso=>c,sube=>sube,baja=>baja,piso_donde_esta=>piso_donde_esta);
+ U0:codifica_boton PORT MAP(piso_donde_va=>piso_donde_va,codigo_piso=>codigo_piso);
+U1:FSM_ascensor PORT MAP(clk=>reloj,reset=>reset,codigo_piso=>codigo_piso,sube=>sube,baja=>baja,piso_donde_esta=>piso_donde_esta);
 
 
-clk <= NOT clk AFTER periodo;
+reloj <= NOT reloj AFTER periodo;
  reset <= '0', '1' after 1 ns;
 
-	B <= "000",
+	piso_donde_va <= "000",
          "001" AFTER periodo,
          "010" AFTER 2*periodo,
          "100" AFTER 3*periodo,
