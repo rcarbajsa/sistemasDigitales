@@ -68,7 +68,9 @@ reloj <= NOT reloj AFTER periodo;
 	 "101" AFTER 5*periodo,
          "111" AFTER 6*periodo,
          "110" AFTER 7*periodo,
-         "000" AFTER 8*periodo;
+         "000" AFTER 8*periodo,
+	 "001" AFTER 9*periodo,
+	 "010" AFTER 10*periodo;
 
 
 END ascensor_completo_arquitectura_test;
