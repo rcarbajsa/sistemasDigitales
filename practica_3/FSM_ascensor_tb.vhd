@@ -1,27 +1,23 @@
-
-------------------------------------------------------------------------
--- Universidad Polit?cnica de Madrid
--- Se permite copia para fines de estudio
-------------------------------------------------------------------------
--- Proyecto           : Ascensor de 3 pisos
---                    : 
--- Diseno             : Test para FSM
--- Nombre del fichero : FSM_ascensor_tb.vhd
--- Autor              : V. Rodellar
--- Fecha              : 10/10/2013
--- Versi?n            : 1.0
--- Resumen            : Este fichero contiene la entidad y la arquitectura
---                    : para comprobar la funcionalidad de la FSM del ascensor
---                    
---                  
---
---
+---------------------------------------------------------------------------
+-- Este diseño es propietario el autor y puede ser utilizado con fines de
+-- estudio
+---------------------------------------------------------------------------
+-- Proyecto: Tercera práctica de Sistemas Digitales
+-- Diseño: Máquina de Estados Finitos
+-- Nombre del fichero: NOMBRE DEL FICHERO.vhd
+-- Autor: Raúl Carbajosa González (y160311) y Máximo García Martínez (y160242)
+-- Fecha: 23/05/2017
+-- Versión: 1.0
+-- Resumen: Contiene una entidad y una arquitectura de una
+-- máquina de estados finitos que controla el funcionamiento de un ascensor
+-- Se utilizan el tipo de datos STD_LOGIC para todas las señales.
+-- La arquitectura se realiza en estilo ESTRUCTURAL.
 -- Modificaciones:
 --
--- Fecha        Autor        Versi?n         Descripci?n del cambio
-------------------------------------------------------------------------
-
------------------------------------------------------------------------
+-- Fecha Autor Versión Descripción del cambio
+-- ========================================================================
+--
+-- ========================================================================
 
 LIBRARY ieee;
 USE ieee.STD_LOGIC_1164.all;
@@ -41,14 +37,8 @@ COMPONENT FSM_ascensor IS
 		codigo_piso : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
 		sube, baja : OUT STD_LOGIC;
 		piso_donde_esta	: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
-
 	);
-
- 
 END COMPONENT;
-
-
--- Declaraci?n de se?ales
 
      	CONSTANT periodo : TIME := 20 ns;
 	SIGNAL reloj     : STD_LOGIC := '0'; -- Arranque de secuencia del reloj
@@ -57,13 +47,8 @@ END COMPONENT;
      	SIGNAL sube      :  STD_LOGIC; 
      	SIGNAL baja      :  STD_LOGIC;  
 	SIGNAL piso_donde_esta  :  STD_LOGIC_VECTOR(1 DOWNTO 0); 
-                           
-
-
--- Descripci?n de la arquitectura 
 
 BEGIN
-
 ascen: FSM_ascensor 
 	PORT MAP (clk => reloj,  
       		  reset => reset,
