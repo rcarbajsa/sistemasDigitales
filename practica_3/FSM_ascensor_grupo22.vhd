@@ -1,3 +1,23 @@
+---------------------------------------------------------------------------
+-- Este diseño es propietario el autor y puede ser utilizado con fines de
+-- estudio
+---------------------------------------------------------------------------
+-- Proyecto: Tercera práctica de Sistemas Digitales
+-- Diseño: Máquina de Estados Finitos
+-- Nombre del fichero: NOMBRE DEL FICHERO.vhd
+-- Autor: Raúl Carbajosa González (y160311) y Máximo García Martínez (y160242)
+-- Fecha: 23/05/2017
+-- Versión: 1.0
+-- Resumen: Contiene una entidad y una arquitectura de una
+-- máquina de estados finitos que controla el funcionamiento de un ascensor
+-- Se utilizan el tipo de datos STD_LOGIC para todas las señales.
+-- La arquitectura se realiza en estilo ESTRUCTURAL.
+-- Modificaciones:
+--
+-- Fecha Autor Versión Descripción del cambio
+-- ========================================================================
+--
+-- ========================================================================
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 ENTITY FSM_ascensor IS 
